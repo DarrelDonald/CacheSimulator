@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1511220180 source:c:\c\simulator\cachesim.c
+	<stdio.h>
+	<stdint.h>
+	<string.h>
+	<math.h>
+	<stdbool.h>
+	"cachesim.h"
+
+1511084682 c:\c\simulator\cachesim.h
+

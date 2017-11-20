@@ -1,0 +1,345 @@
+======================================
+BLOCK SIZE = 64 Bytes
+1-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 512
+Cache Hits:    1059918
+Cache Misses:  2174137
+Hit Rate:      0.327737
+Miss Rate:     0.672263
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+512-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 1
+Cache Hits:    2963901
+Cache Misses:  270154
+Hit Rate:      0.916466
+Miss Rate:     0.083534
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 128
+Cache Hits:    2380671
+Cache Misses:  853384
+Hit Rate:      0.736126
+Miss Rate:     0.263874
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 64
+Cache Hits:    2855090
+Cache Misses:  378965
+Hit Rate:      0.882820
+Miss Rate:     0.117180
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+16-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 32
+Cache Hits:    2916622
+Cache Misses:  317433
+Hit Rate:      0.901847
+Miss Rate:     0.098153
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 16 Bytes
+2048-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 2048
+NUMBER OF SETS = 1
+Cache Hits:    2964948
+Cache Misses:  269107
+Hit Rate:      0.916790
+Miss Rate:     0.083210
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 16 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 2048
+NUMBER OF SETS = 256
+Cache Hits:    2851907
+Cache Misses:  382148
+Hit Rate:      0.881836
+Miss Rate:     0.118164
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 16 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 2048
+NUMBER OF SETS = 512
+Cache Hits:    2376628
+Cache Misses:  857427
+Hit Rate:      0.734876
+Miss Rate:     0.265124
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 32 Bytes
+1024-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 1024
+NUMBER OF SETS = 1
+Cache Hits:    2964599
+Cache Misses:  269456
+Hit Rate:      0.916682
+Miss Rate:     0.083318
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 32 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 1024
+NUMBER OF SETS = 128
+Cache Hits:    2854017
+Cache Misses:  380038
+Hit Rate:      0.882489
+Miss Rate:     0.117511
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 32 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 1024
+NUMBER OF SETS = 256
+Cache Hits:    2381259
+Cache Misses:  852796
+Hit Rate:      0.736308
+Miss Rate:     0.263692
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 128 Bytes
+256-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 256
+NUMBER OF SETS = 1
+Cache Hits:    2962502
+Cache Misses:  271553
+Hit Rate:      0.916033
+Miss Rate:     0.083967
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 128 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 256
+NUMBER OF SETS = 32
+Cache Hits:    2855653
+Cache Misses:  378402
+Hit Rate:      0.882995
+Miss Rate:     0.117005
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 128 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 256
+NUMBER OF SETS = 64
+Cache Hits:    2381875
+Cache Misses:  852180
+Hit Rate:      0.736498
+Miss Rate:     0.263502
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+256-WAY
+CACHE SIZE = 16384 Bytes
+NUMBER OF BLOCKS = 256
+NUMBER OF SETS = 1
+Cache Hits:    2692650
+Cache Misses:  541405
+Hit Rate:      0.832593
+Miss Rate:     0.167407
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 16384 Bytes
+NUMBER OF BLOCKS = 256
+NUMBER OF SETS = 32
+Cache Hits:    2494691
+Cache Misses:  739364
+Hit Rate:      0.771382
+Miss Rate:     0.228618
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 16384 Bytes
+NUMBER OF BLOCKS = 256
+NUMBER OF SETS = 64
+Cache Hits:    2384661
+Cache Misses:  849394
+Hit Rate:      0.737359
+Miss Rate:     0.262641
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+1024-WAY
+CACHE SIZE = 65536 Bytes
+NUMBER OF BLOCKS = 1024
+NUMBER OF SETS = 1
+Cache Hits:    3099238
+Cache Misses:  134817
+Hit Rate:      0.958313
+Miss Rate:     0.041687
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 65536 Bytes
+NUMBER OF BLOCKS = 1024
+NUMBER OF SETS = 128
+Cache Hits:    2855041
+Cache Misses:  379014
+Hit Rate:      0.882805
+Miss Rate:     0.117195
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 65536 Bytes
+NUMBER OF BLOCKS = 1024
+NUMBER OF SETS = 256
+Cache Hits:    2086632
+Cache Misses:  1147423
+Hit Rate:      0.645206
+Miss Rate:     0.354794
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+2048-WAY
+CACHE SIZE = 131072 Bytes
+NUMBER OF BLOCKS = 2048
+NUMBER OF SETS = 1
+Cache Hits:    3232217
+Cache Misses:  1838
+Hit Rate:      0.999432
+Miss Rate:     0.000568
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 131072 Bytes
+NUMBER OF BLOCKS = 2048
+NUMBER OF SETS = 256
+Cache Hits:    2855636
+Cache Misses:  378419
+Hit Rate:      0.882989
+Miss Rate:     0.117011
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 131072 Bytes
+NUMBER OF BLOCKS = 2048
+NUMBER OF SETS = 512
+Cache Hits:    2088377
+Cache Misses:  1145678
+Hit Rate:      0.645746
+Miss Rate:     0.354254
+======================================
+
+
+
+
