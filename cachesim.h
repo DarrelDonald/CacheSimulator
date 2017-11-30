@@ -6,8 +6,8 @@
  */
 #define BLOCK_SIZE    64      /* Cache block size (or cache line size) in bytes \\
                                  (must be power of 2). 4 Bytes = 1 Word */
-#define WAY_SIZE  4 /* Associativity; 1-way = direct-mapped */
-#define CACHE_SIZE 32768*4     /* Cache capacity in bytes (must be power of 2)*/
+#define WAY_SIZE 16 /* Associativity; 1-way = direct-mapped */
+#define CACHE_SIZE (32768)     /* Cache capacity in bytes (must be power of 2)*/
 
 #define NUM_BLOCKS    (CACHE_SIZE / BLOCK_SIZE)
 #define NUM_SETS    (NUM_BLOCKS / WAY_SIZE)
@@ -28,6 +28,8 @@ struct direct_mapped_cache {
 };
 
 
+
+
 /*Read the memory traces and convert it to binary*/
 uint64_t convert_address(char memory[]);
 
@@ -35,3 +37,4 @@ uint64_t convert_address(char memory[]);
 void direct_mapped_cache_access(struct direct_mapped_cache *cache, uint64_t address);
 
 void fully_associative_cache_access(struct direct_mapped_cache *cache, uint64_t address);
+

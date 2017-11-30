@@ -9,3 +9,14 @@
 
 1511084682 c:\c\simulator\cachesim.h
 
+1511994477 source:c:\users\shadows97_7\documents\github\cachesimulator\cachesim.c
+	<stdio.h>
+	<stdint.h>
+	<string.h>
+	<math.h>
+	<stdbool.h>
+	<stdlib.h>
+	"cachesim.h"
+
+1511994622 c:\users\shadows97_7\documents\github\cachesimulator\cachesim.h
+

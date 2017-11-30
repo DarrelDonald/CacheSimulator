@@ -1,0 +1,2 @@
+cachesim: cachesim.c
+	gcc -o test cachesim.c

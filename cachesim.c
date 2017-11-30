@@ -10,13 +10,16 @@
 #include <string.h>
 #include <math.h>
 #include <stdbool.h>
+#include <stdlib.h>
 #include "cachesim.h"
 
+/*for plru*/
 
+    uint64_t tree[WAY_SIZE*2-1] = {0};
 
 int main(int argc, char *argv[])
 {
-    FILE *f = fopen("test_results.txt","a");
+    FILE *f = fopen("replacement_tests.txt","a");
     if (argc != 3) {
         printf("Usage: %s <direct> <trace file name>\n", argv[0]);
         return 1;
@@ -48,8 +51,19 @@ int main(int argc, char *argv[])
     d_cache.misses = 0;
 
 
+    for (int i =WAY_SIZE-1;i<WAY_SIZE*2-1;i++){
+        tree[i]=i-(WAY_SIZE-1);
+    }
+    for (int i =0;i<WAY_SIZE*2-1;i++){
+        printf("tree[%d]=%d\n",i,tree[i]);
+    }
+    printf("\n\n");
+
+
     /* Opening the memory trace file */
     fp = fopen(trace_file_name, "r");
+
+
 
     if (strncmp(argv[1], "direct", 6)==0) { /* Simulating direct-mapped cache */
         /* Read the memory request address and access the cache */
@@ -69,6 +83,8 @@ int main(int argc, char *argv[])
     }
 
 
+
+
     else if (strncmp(argv[1], "full", 4)==0) { /* Simulating fully-associative cache */
         /* Read the memory request address and access the cache */
         while (fgets(mem_request, 20, fp)!= NULL) {
@@ -77,7 +93,7 @@ int main(int argc, char *argv[])
         }
         /*Print out the results*/
         printf("\n======================================\n");
-        printf("Cache type:    Fully-Associative Cache\n");
+        printf("Cache type:    Fully/N-WAY SET Associative Cache\n");
         printf("======================================\n");
         printf("Cache Hits:    %d\n", d_cache.hits);
         printf("Cache Misses:  %d\n", d_cache.misses);
@@ -175,18 +191,46 @@ void direct_mapped_cache_access(struct direct_mapped_cache *cache, uint64_t addr
 
 void fully_associative_cache_access(struct direct_mapped_cache *cache, uint64_t address)//also works for n way set associative
 {
+    uint64_t j;
     uint64_t block_addr = address >> (unsigned)log2(BLOCK_SIZE);
-    //uint64_t index = block_addr % NUM_BLOCKS;
+    uint64_t index = block_addr % NUM_BLOCKS;
     uint64_t tag = block_addr >> (unsigned)log2(NUM_BLOCKS);
     bool hit = false;
     bool updated = false;
+
 
 #ifdef DBG
     printf("Memory address: %llu, Block address: %llu, Set: %llu, Index: %llu, Tag: %llu ", address, block_addr, block_addr%NUM_SETS, index, tag);
 #endif
 
+
+//PLRU
+
+                /*for (j=0; j<(WAY_SIZE-1);){
+                    //printf("j=%llu\n",j);
+                    if (tree[j]==0){
+                        //printf("\tthis\n");
+                        tree[j]=1;
+                        //printf("\t%llu\n",tree[j]);
+                        j=j*2+1;
+                    }
+                    else{
+                        //printf("\telse\n");
+                        tree[j]=0;
+                        //printf("\t%llu\n",tree[j]);
+                        j=j*2+2;
+                    }
+                }*/
+                //printf("***NEXT***\n");
+
+
+    //printf("set: %llu\n",block_addr%NUM_SETS,tag);
     for (uint64_t i = block_addr%NUM_SETS; i<NUM_BLOCKS;i+=NUM_SETS){
+
+        //printf("%llu\n\tvalid: %d\n",(i-(block_addr%NUM_SETS))/NUM_SETS,cache->valid_field[i]);
+        //printf("valid field checked: %llu\n",i);
         if (cache->valid_field[i] && cache->tag_field[i] == tag) { /* Cache hit */
+
             cache->hits += 1;
 #ifdef DBG
         printf("Hit!\n");
@@ -195,13 +239,24 @@ void fully_associative_cache_access(struct direct_mapped_cache *cache, uint64_t 
             break;
         }
     }
+
          if (!hit) {
         /* Cache miss */
             cache->misses += 1;
 #ifdef DBG
         printf("Miss!\n");
 #endif
-            for (uint64_t i = block_addr%NUM_SETS; i<NUM_BLOCKS;i+=NUM_SETS) {
+
+            //RR
+
+            uint64_t r=rand()%WAY_SIZE;
+            cache->valid_field[r*NUM_SETS+(block_addr%NUM_SETS)]=1;
+            cache->tag_field[r*NUM_SETS+(block_addr%NUM_SETS)]=tag;
+
+
+            //NRU
+
+            /*for (uint64_t i = block_addr%NUM_SETS; i<NUM_BLOCKS;i+=NUM_SETS) {
                 if (!cache->valid_field[i]){
                     cache->tag_field[i] = tag;
                     cache->valid_field[i] = 1;
@@ -210,10 +265,39 @@ void fully_associative_cache_access(struct direct_mapped_cache *cache, uint64_t 
                 }
             }
             if (!updated){
+
+
+
                 for (uint64_t i = block_addr%NUM_SETS; i<NUM_BLOCKS;i+=NUM_SETS){
                     cache->valid_field[i] = 0;
                 }
-            }
+                cache->tag_field[0]=tag;
+                cache->valid_field[0]=1;
+            }*/
+
+
+
+
+            //PLRU
+                /*for (j=0; j<(WAY_SIZE-1);){
+                    //printf("miss \n");
+                    if (tree[j]==0){
+                        j=j*2+1;
+                    }
+                    else{
+                        j=j*2+2;
+                    }
+                    //printf("tree[%d]=%d\n",j,tree[j]);
+                }
+
+                //printf("valid field replaced: %llu\n",tree[j]*NUM_SETS+(block_addr%NUM_SETS));
+                cache->valid_field[tree[j]*NUM_SETS+(block_addr%NUM_SETS)]=1;
+                cache->tag_field[tree[j]*NUM_SETS+(block_addr%NUM_SETS)]=tag;*/
+
+
+
+
+
             /*if (cache->valid_field[index] && cache->dirty_field[index]) {
              Write the cache block back to memory
             }

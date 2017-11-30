@@ -1,0 +1,287 @@
+PLRU
+
+
+trace.stream
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 128
+Cache Hits:    1771776
+Cache Misses:  1462279
+Hit Rate:      0.547850
+Miss Rate:     0.452150
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 64
+Cache Hits:    2964386
+Cache Misses:  269669
+Hit Rate:      0.916616
+Miss Rate:     0.083384
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+16-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 32
+Cache Hits:    2965116
+Cache Misses:  268939
+Hit Rate:      0.916842
+Miss Rate:     0.083158
+======================================
+
+
+
+
+trace.hpcg
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 128
+Cache Hits:    1386041
+Cache Misses:  113959
+Hit Rate:      0.924027
+Miss Rate:     0.075973
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 64
+Cache Hits:    1428895
+Cache Misses:  71105
+Hit Rate:      0.952597
+Miss Rate:     0.047403
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+16-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 32
+Cache Hits:    1447539
+Cache Misses:  52461
+Hit Rate:      0.965026
+Miss Rate:     0.034974
+======================================
+
+
+
+
+hw2_q6_memoryaddr
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 128
+Cache Hits:    7
+Cache Misses:  5
+Hit Rate:      0.583333
+Miss Rate:     0.416667
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 64
+Cache Hits:    7
+Cache Misses:  5
+Hit Rate:      0.583333
+Miss Rate:     0.416667
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+16-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 32
+Cache Hits:    7
+Cache Misses:  5
+Hit Rate:      0.583333
+Miss Rate:     0.416667
+======================================
+
+
+
+
+RR
+
+trace.stream
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 128
+Cache Hits:    2430899
+Cache Misses:  803156
+Hit Rate:      0.751657
+Miss Rate:     0.248343
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 64
+Cache Hits:    2898368
+Cache Misses:  335687
+Hit Rate:      0.896202
+Miss Rate:     0.103798
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+16-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 32
+Cache Hits:    2934889
+Cache Misses:  299166
+Hit Rate:      0.907495
+Miss Rate:     0.092505
+======================================
+
+
+
+
+trace.hpcg
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 128
+Cache Hits:    1384214
+Cache Misses:  115786
+Hit Rate:      0.922809
+Miss Rate:     0.077191
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 64
+Cache Hits:    1428900
+Cache Misses:  71100
+Hit Rate:      0.952600
+Miss Rate:     0.047400
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+16-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 32
+Cache Hits:    1447312
+Cache Misses:  52688
+Hit Rate:      0.964875
+Miss Rate:     0.035125
+======================================
+
+
+
+
+hw2_q6_memoryaddr
+
+======================================
+BLOCK SIZE = 64 Bytes
+4-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 128
+Cache Hits:    7
+Cache Misses:  5
+Hit Rate:      0.583333
+Miss Rate:     0.416667
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+8-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 64
+Cache Hits:    7
+Cache Misses:  5
+Hit Rate:      0.583333
+Miss Rate:     0.416667
+======================================
+
+
+
+
+======================================
+BLOCK SIZE = 64 Bytes
+16-WAY
+CACHE SIZE = 32768 Bytes
+NUMBER OF BLOCKS = 512
+NUMBER OF SETS = 32
+Cache Hits:    7
+Cache Misses:  5
+Hit Rate:      0.583333
+Miss Rate:     0.416667
+======================================
+
+
+
+
